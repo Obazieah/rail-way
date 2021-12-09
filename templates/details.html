@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANK_MANAGEMENT</title>
+    <link rel="shortcut icon" href="/static/pictures/main_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}"></head>
+<body>
+    <!-- <button><a href="/login_trvl">Add_traveller</a></button> -->
+    <!-- <button class="clue"><a href="/bck">back</a></button> -->
+  
+    <div class="std_reg">
+        <a href=""><img src="/static/pictures/main_icon.png" class="logo" alt="home button"></a>
+        <a href="/bck" ><button class="clue"><span>back <br>&#8594 &#8594</span></button></a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <center><h1><U>ADMIN KEEP-POINT</U></h1></center>
+        <br> 
+        <br>
+        <br>
+        <br>
+   <center>
+    <table>
+        <tr>
+            <th>customer_name</th>
+            <th>type</th>
+            <th>Status</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    
+        {% for delist in delists %}
+        <tr>
+        <td>{{delist.traveller_name}}</td>
+        <td>{{delist.from_where}}</td>
+        <td>{{delist.to_where}}</td>
+    
+        <td><a href="{{ url_for( 'customer_details', id=delist.ID)}}">Details</a></td>
+        <td><a href="{{ url_for( 'edit_customer', id=delist.ID)}}">Edit</a></td>
+        <td><a href="{{ url_for( 'delete_customer', id=delist.ID)}}">Delete</a></td>
+        </tr>
+    {% endfor %}
+
+    </table>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <a href="/hack" method ="POST"><button class="check" style="height: 50px;">Check your <b>message</b></button></a><br>
+</center><br>
+</div>
+<div class="dow">
+
+</div>
+</body>
+</html>

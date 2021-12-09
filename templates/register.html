@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANK_MANAGEMENT</title>
+    <link rel="shortcut icon" href="/static/pictures/main_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}"></head>
+<body>
+  <div class="std_reg">
+    <a href="/"><img src="/static/pictures/main_icon.png" class="logo" alt="home button"></a>
+    <a href="/clear" ><button class="clue"><span>back <br>&#8594 &#8594</span></button></a>
+    <!-- <a href="/clear"><button>back</button></a> -->
+    <center>
+    <h1 style="font-size: 5vh; text-decoration: underline; text-decoration-color: black;"><u>ADMIN PAGE</u></h1>
+ 
+    <form action="/clog" method="POST">
+        
+        <br><br>
+        <p class="form_t"><b>Username:</b></p><br>
+        <input type="text"  class="box" name="username" placeholder="Username" required>
+        <br><br>
+        <p class="form_t"><b>Password:</b></p><br>
+        <input type="password" class="box" name="password" placeholder="Password" required>
+        <br><br>
+        <input type="submit" value="Login" class="reg" placeholder="login">
+        <br><br>
+    </form>
+
+ </div> 
+</center>
+<br>
+<div class="foots">
+    <center><h2 style="color: black;">MANAGEMENT_SYSTEM </h2></center>
+    <center><p><b></p></center>
+</div>
+</body>
+</html>

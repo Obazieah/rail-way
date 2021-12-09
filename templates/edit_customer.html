@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANK_MANAGEMENT</title>
+    <link rel="shortcut icon" href="/static/pictures/main_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">   
+</head>
+<body class="all">
+  
+   <div class="std_reg">
+    <a href=""><img src="/static/pictures/main_icon.png" class="logo" alt="home button"></a>
+    <a href="/back" ><button class="clue"><span>back <br>&#8594 &#8594</span></button></a><br><br>
+    <center><h1><u>EDIT BANK DETAILS</u></h1></center>
+<br><br><br><hr><br><br><hr><br><center>
+<form action="{{ url_for( 'edit_customer', id=delist.ID)}}" method="POST">
+
+    <input type="text" name="traveller_name" class="box" value="{{delist.traveller_name}}" placeholder="traveller_name">
+    <br><br>
+    <input type="text" name="from_where" class="box" value="{{delist.from_where}}" placeholder="From_where">
+    <br><br>
+    <input type="text" name="to_where" class="box" value="{{delist.to_where}}" placeholder="To_where">
+    <br><br>
+    <input type="date" name="departure_time" class="box" value="{{delist.departure_time}}">
+    <br><br>
+    <input type="submit" class="reg" onclick="alert('Are sure you sure you have edited it..')" value="submit">
+    <br><br>
+    <hr><br><br><hr>
+</form>
+</div>
+</center>
+</body>
+</html>

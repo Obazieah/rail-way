@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANK_MANAGEMENT</title>
+    <link rel="shortcut icon" href="/static/pictures/main_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">   
+</head>
+<body class="std_all">
+
+    <a href="/back" ><button class="clue"><span>back <br>&#8594 &#8594</span></button></a>
+    <!-- <button><a href="/back">back</a></button> -->
+    <center>
+    <h2><u><i>Details display</i></u></h2>
+    <br><hr>
+    <br>
+    <hr>
+    <br>
+    <p style="text-decoration: underline; font-weight: bolder;">Your account name</p><br>
+    <h1>{{delist.traveller_name}}</h1><br><br>
+    <p style="text-decoration: underline; font-weight:bolder;">address</p><br>
+    <p>{{delist.from_where}}</p><br><br>
+    <p style="text-decoration: underline; font-weight: bolder;">To this new bank branch</p><br>
+    <p>{{delist.to_where}}</p><br><br>
+
+
+    <br>
+    <hr>
+    <br>
+    <hr>
+</center>
+
+</body>

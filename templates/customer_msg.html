@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANK_MANAGEMENT</title>
+    <link rel="shortcut icon" href="/static/pictures/main_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+    <p style="text-decoration: underline; font-weight: bolder;">Your bank name name</p>
+    <h1 style="font-size: xx-large;">{{check.account _name}}</h1>
+    <p style="text-decoration: underline; font-weight:bolder;"> The present address</p>
+    <legend><p>{{check.from_text}}</p></legend>
+  
+</body>

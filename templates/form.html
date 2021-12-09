@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANK_MANAGEMENT</title>
+    <link rel="shortcut icon" href="/static/pictures/main_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+
+</head>
+<body>
+ <div class="std_reg">
+    <a href=""><img src="/static/pictures/main_icon.png" class="logo" alt="home button"></a>
+    <a href="/" ><button class="clue"><span>back <br>&#8594 &#8594</span></button></a>
+    <center>
+    <h1 style="font-size: 5vh; text-decoration: underline; text-decoration-color: black;">SIGN UP</h1>
+
+  <form action="/system" class="trl" method="POST">
+
+    <br><br>
+    <b class="form_t">NAME: </b><br>
+    <input type="text" name="name" class="box" placeholder="Name" required>
+    <br><br>
+    <b class="form_t">AGE: </b><br>
+    <input type="number" name="age" class="box" placeholder="Age" required>
+    <br><br>
+    <b class="form_t">ADDRESS: </b><br>
+    <input type="text" name="address" class="box" placeholder="address" required>
+    <br><br>
+    <b class="form_t">PASSWORD: </b><br>
+    <input type="password" name="password" class="box" placeholder="password" aria-required="true" required>
+    <br><br>
+    <b class="form_t">TEL PHONE: </b><br>
+    <input type="tel" name="tel phone" class="box" placeholder="tel phone" required>
+    <br><br>
+    <input type="submit" class="reg" value="Register">
+    <br><br>
+    </center>
+  </form>
+ </div><hr style="background-color:2px black;">
+<div class="student">
+    <center>
+        <p class="p_tag">Do you have an account with us....</p><br><a href="/login_trvl" ><button class="reg">Login</button></a>
+       </center>
+       <br>
+</div>
+
+<div class="footer">
+<center><h2 style="color: black;"> BANK verification code </h2></center>
+<center><p><b></p></center>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,337 @@
+        
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .top{
+            height: 4%;
+            bottom: 0;
+            left: 0;
+            position: absolute; 
+            justify-content: space-between;
+        }
+        .logo{
+            height: 15%;
+            width: 11vw;
+            position: absolute;
+            padding: 0;
+            margin-top: 3px;
+            margin-left: 5px;
+        }
+        .dive{
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width:100vw;
+            background-image: url("/static/pictures/back_g.jpeg");
+            height: 100vh;
+            position: relative;
+            object-fit: cover;
+        }
+        .align{
+            box-shadow:2px solid black;
+            border-bottom: 4px black;
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            /* background-color:rgba(141, 23, 10, 0.501); */
+            width: 100%;
+            height: 20vh;
+            border-radius: 30px;
+            transform: translate(2%, -5%);
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .btn_check{
+            cursor: pointer;
+            background-color: white;
+            color: black;
+            font-size: 10px;
+            font-weight: bolder;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            height: 60%;
+            width: 25%;
+            /* border-bottom: black; */
+            border-radius: 30px;
+            border-style:solid;
+        }
+        .clog_btn{
+            color: black;
+            font-size: 10px;
+            font-weight: bolder;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+            cursor: pointer;
+            background-color: #fff;
+            height: 60%;
+            width: 21%;
+            /* border-bottom:black; */
+            border-radius: 30px;
+            border-style:solid;
+           
+        }
+        .btn_check:hover{
+            background-color: grey;
+            color: black;
+            
+            /* transition: all ease-in-out 0.7s; */
+        }
+        
+        .btn_check span:after{
+            content: '>>';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+        }
+        .btn_check span{
+           cursor: pointer;
+           display: inline-block;
+           position: relative;
+        }
+        .btn_check:hover span{
+            padding-right: 25px;
+        }
+        .btn_check:hover span::after{
+            opacity: 1;
+            right: 0;
+        }
+
+        .clog_btn span:after{
+            content: '>>';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+        }
+        .clog_btn span{
+           cursor: pointer;
+           display: inline-block;
+           position: relative;
+        }
+        .clog_btn:hover span{
+            padding-right: 25px;
+        }
+        .clog_btn:hover span::after{
+            opacity: 1;
+            right: 0;
+        }
+        .std_all{
+            background-color: black;
+            color: blanchedalmond;
+        }
+        .vex{
+           background-color: black;
+           color: blanchedalmond;
+           height: 3vw;
+           width: 18vw;
+           border-radius: 20px;
+        }
+        .vex:hover{
+            background-color:rgb(223, 12, 12);
+            color: black;
+            transition:all ease-in-out 0.6s;
+            height: 4vw;
+            width: 20vw;
+        }
+
+        .std_reg{
+            /* background-color: burlywood; */
+            background-image: url("/static/pictures/pexel //(10/).jpeg");
+            color: rgb(12, 12, 12);
+        }
+        .student{color: rgb(14, 13, 13);
+            background-color: burlywood;
+            color: rgb(0, 0, 0);
+
+        }
+        .clue{
+            height: 39px;
+            background-color: rgb(255, 213, 158);
+            margin-top: 1%;
+            color: rgb(0, 0, 0);
+            border-style: ridge;
+            box-sizing: border-box;
+            border-radius: 40px;
+            margin-left: 85vw;
+            white-space: pre-wrap;
+            width: 15%;
+        }
+    .footer{
+        height: 29vh;
+        background-color: black;
+    }
+ 
+  .reg{
+    height: 5vmin;
+    width: 15vh;
+    border-radius: 30px;
+    font-size: 100%;
+  }      
+ .box{
+     height: 6vmin;
+     width: 45vh;
+     color:blanchedalmond;
+     stroke-dashoffset: 6px;
+     background-color: black;
+     border-radius: 30px;
+     font-size: 100%;
+ }
+ .flask span{
+    text-decoration: underline; 
+    background-color: blanchedalmond;
+    color: black;
+    font-size: xx-large;
+ }
+ .flask span:hover{
+     background-color: black;
+     color: blanchedalmond;
+     border-radius: 10px;
+ }
+.bos{
+    border-radius: 3px;
+    height: 5vmin;
+}
+ .bos:hover{
+    color: rgb(255, 253, 253);
+    transition: all ease-in-out 0.6s;
+    height: 4vh;
+    width: 20vh;
+    border-radius: 14px;
+    background-color: rgb(0, 0, 0);
+ }
+ /* =========================
+
+ ========================= */
+.clue:hover{
+    color: rgb(255, 193, 130);
+    background-color: rgb(221, 0, 0);
+    height: 40px;
+    width: 14%;
+    transition: all ease-in-out 0.7s;
+ 
+}
+.reg:hover{
+    color: peachpuff;
+    background-color: rgb(221, 0, 0);
+    height: 6vmin;
+    width: 16vh;
+    transition: all ease-in-out 0.7s;
+}
+.footer{
+    color: black;
+}
+.foots{
+    background-color: black;
+    height: 29vw;
+    width: 99vw;
+}
+.footer:hover{
+background-color: rgb(218, 0, 0);
+color:white;
+transition: all ease-in-out 0.8s;
+}
+
+.p_tag:hover{
+color: seashell;
+text-decoration: underline;
+}
+.form_t{
+    padding-right: 40vh;
+    margin-right: 7px;
+    text-decoration: black;
+    font-size: larger;
+}
+.preview{
+    margin-left: 400%;
+    padding-left: 48%;
+}
+.arrange{
+    text-align: center;
+    padding-left: 25%;
+}
+.from_text{
+    padding-left:1%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.from_text p{
+    margin-left: 60%;
+}
+.down:hover{
+    transition: all ease-in-out 0.9s;
+    height: 60vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color:rgb(14, 11, 11) ; 
+}
+.down{
+    color: black;
+    height: 60vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+.std_rep{
+    background-image: url("/static/pictures/pexel\ \(10\).jpg");
+    height: 10%;
+    color: black;
+}
+
+
+
+.dow{
+    color: black;
+    height: 30vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black; 
+}
+.check{
+    height: 90%;
+    width:10%;
+    border-radius: 30%;
+    background-color: black;
+    color: rgb(221, 0, 0);
+}
+.check:hover{
+    background-color: white;
+    color: black;
+    border-radius: 15%;
+}
+.end{
+    background-color: black;
+    height: 21vw;
+    width: 99vw; 
+}
+
+.all{
+    background-color: black;
+    color: white;
+}
+
+.cls{
+    background-color: black;
+    color: white;
+}
+.btn-cls{
+    font-size: x-large;
+    height: 4vw;
+    width: 25%;
+    border-radius: 20px;
+}
+.btn-cls:hover{
+    background-color: rgb(221, 0, 0);
+    color: black;
+    width:30%;
+    transition: all ease-in-out 0.8s;
+}

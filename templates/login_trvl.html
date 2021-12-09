@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANK_MANAGEMENT</title>
+    <link rel="shortcut icon" href="/static/pictures/main_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+    
+    <div class="std_reg">
+        <a href="/"><img src="/static/pictures/main_icon.png" class="logo" alt="home button"></a>
+        <a href="/system" ><button class="clue"><span>back <br>&#8594 &#8594</span></button></a>
+<center>
+        <h1 style="font-size: 5vh;">LOGIN AS ONLINE USER</h1>
+        <br>
+    <form action="/login_trvl" class= "trl"method="POST">
+        <h4><i>{{msg}}</i></h4>
+        <br>
+        <br>
+        <p class="form_t"><b>Name:</b></p><br>
+        <input type="text" name="name" class="box" placeholder="Name" required>
+        <br><br>
+        <br><br>
+        <p class="form_t"><b>Password:</b></p><br>
+        <input type="password" name="password" class="box" placeholder="password" required>
+        <br><br>
+        <br><br>
+        <input type="submit" value="Login" class="reg" placeholder="Login">
+</center>
+<br><br>    
+    </form>
+    <div class="student">
+        <center>
+            <p class="p_tag">{{msg}}</p><br><br>
+           </center>
+           <br>
+    </div>
+    
+<div class="footer">
+    <center><h2 style="color: black;">LOGIN VERIFICATION CODE...</h2></center>
+    <center><p><b></b></p></center>
+</div>
+</body>
+</html>
